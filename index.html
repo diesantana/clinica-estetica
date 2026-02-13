@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Bella | Estética em São Paulo</title>
+    <meta name="description"
+        content="Clínica de estética especializada em procedimentos faciais e corporais em São Paulo.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-white text-gray-700 scroll-smooth font-[Inter]">
+
+    <!-- NAVBAR (Desktop + Mobile) -->
+    <header class="bg-white/90 backdrop-blur shadow-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-bold text-xl text-[#6B4F3A]">Clínica Bella</h1>
+
+            <!-- Desktop -->
+            <nav class="hidden md:flex gap-6">
+                <a href="#sobre" class="hover:text-[#6B4F3A]">Sobre</a>
+                <a href="#procedimentos" class="hover:text-[#6B4F3A]">Procedimentos</a>
+                <a href="#galeria" class="hover:text-[#6B4F3A]">Resultados Reais</a>
+                <a href="#faq" class="hover:text-[#6B4F3A]">Dúvidas</a>
+                <a href="#contato" class="hover:text-[#6B4F3A]">Contato</a>
+            </nav>
+
+            <!-- Botão Mobile -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="#sobre" class="hover:text-[#6B4F3A]">Sobre</a>
+                <a href="#procedimentos" class="hover:text-[#6B4F3A]">Procedimentos</a>
+                <a href="#galeria" class="hover:text-[#6B4F3A]">Resultados Reais</a>
+                <a href="#faq" class="hover:text-[#6B4F3A]">Dúvidas</a>
+                <a href="#contato" class="hover:text-[#6B4F3A]">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO com imagem -->
+    <section class="pt-14">
+        <div class="relative">
+            <img class="w-full h-[520px] object-cover" src="assets/spa,skincare.webp" alt="Clínica de estética" />
+            <div class="absolute inset-0 bg-[#4B3526]/40"></div>
+
+            <div class="absolute inset-0 flex items-center">
+                <div class="max-w-6xl mx-auto px-6">
+                    <div class="bg-white/80 backdrop-blur p-8 rounded-2xl max-w-xl">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">Clínica de Estética</h2>
+                        <p class="mb-6 text-gray-700">
+                            Cuidado, tecnologia e resultados naturais para valorizar sua beleza.
+                        </p>
+                        <div class="flex gap-3 flex-wrap">
+                            <a href="#contato" class="bg-[#6B4F3A] text-white px-6 py-3 rounded-full hover:bg-[#4B3526]">
+                                Agendar Avaliação
+                            </a>
+                            <a href="#procedimentos"
+                                class="bg-white text-[#6B4F3A] px-6 py-3 rounded-full border border-[#E8D8C3] hover:bg-[#F5EDE6]">
+                                Ver Procedimentos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE com imagem -->
+    <section id="sobre" class="bg-[#F5EDE6] py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold mb-4">Sobre a Clínica</h2>
+                <p class="mb-4">
+                    Somos uma clínica especializada em estética facial e corporal, oferecendo atendimento
+                    personalizado com foco em segurança, qualidade e resultados naturais.
+                </p>
+                <ul class="space-y-2">
+                    <li>✅ Atendimento humanizado</li>
+                    <li>✅ Procedimentos modernos e seguros</li>
+                    <li>✅ Ambiente confortável</li>
+                </ul>
+            </div>
+
+            <img class="rounded-2xl shadow object-cover w-full h-72" src="assets/1.webp" alt="Ambiente da clínica">
+        </div>
+    </section>
+
+    <!-- PROCEDIMENTOS com cards + imagens -->
+    <section id="procedimentos" class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-10">Procedimentos</h2>
+
+            <p class="text-center mb-12 max-w-3xl mx-auto">
+                Trabalhamos com procedimentos modernos e seguros para cuidar da sua pele
+                e realçar sua beleza com naturalidade.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="rounded-2xl overflow-hidden shadow">
+                    <img class="h-44 w-full object-cover" src="assets/2.webp" alt="Limpeza de pele">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Limpeza de Pele</h3>
+                        <p>Renovação e hidratação profunda para uma pele mais saudável.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow">
+                    <img class="h-44 w-full object-cover" src="assets/3.webp" alt="Botox">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Botox</h3>
+                        <p>Suavize linhas de expressão com segurança e naturalidade.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow">
+                    <img class="h-44 w-full object-cover" src="assets/4.webp" alt="Harmonização facial">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Harmonização Facial</h3>
+                        <p>Realce natural com técnicas modernas e personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-10">Resultados Reais</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <img class="rounded-2xl shadow object-cover w-full h-60" src="assets/5.webp" alt="Foto da clínica">
+                <img class="rounded-2xl shadow object-cover w-full h-60" src="assets/img.webp" alt="Foto da clínica">
+                <img class="rounded-2xl shadow object-cover w-full h-60" src="assets/1.webp" alt="Foto da clínica">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center mb-10">Dúvidas Frequentes</h2>
+
+            <div class="space-y-4">
+                <details class="bg-white shadow rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Os procedimentos são seguros?</summary>
+                    <p class="mt-3">Sim. Utilizamos técnicas modernas e produtos regulamentados, com avaliação
+                        individual.</p>
+                </details>
+
+                <details class="bg-white shadow rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Preciso agendar antes?</summary>
+                    <p class="mt-3">Sim. Trabalhamos com agendamento para oferecer atendimento personalizado.</p>
+                </details>
+
+                <details class="bg-white shadow rounded-2xl p-5">
+                    <summary class="font-semibold cursor-pointer">Aceitam cartão?</summary>
+                    <p class="mt-3">Sim. Aceitamos diversas formas de pagamento.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <section class="bg-[#4B3526] py-16 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Agende sua avaliação hoje mesmo</h2>
+        <p class="mb-8">Tire suas dúvidas e marque horário pelo WhatsApp.</p>
+        <a href="https://wa.me/5511999999999"
+            class="bg-[#E8D8C3] text-[#4B3526] hover:bg-[#F5EDE6] px-8 py-3 rounded-full font-semibold">
+            Falar no WhatsApp
+        </a>
+    </section>
+
+    <!-- CONTATO + MAPA -->
+    <section id="contato" class="py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Contato</h2>
+        <p>Rua Exemplo, 123 - São Paulo - SP</p>
+        <p>(11) 99999-9999</p>
+
+        <div class="mt-8">
+            <iframe class="w-full max-w-4xl mx-auto h-72 rounded-2xl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-6 text-center">
+        © 2026 Clínica Bella - Todos os direitos reservados
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <!-- <a href="https://wa.me/5511999999999"
+     class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600">
+    WhatsApp
+  </a> -->
+    <!-- WhatsApp Flutuante (redondo + ícone) -->
+    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener"
+        class="group fixed bottom-6 right-6 w-14 h-14 md:w-16 md:h-16 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center justify-center transition"
+        aria-label="Falar no WhatsApp">
+
+        <!-- Ícone WhatsApp (SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7 md:w-8 md:h-8 fill-current">
+            <path
+                d="M19.11 17.62c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.24.18 1.7.11.52-.08 1.6-.65 1.82-1.28.23-.62.23-1.15.16-1.28-.07-.13-.25-.2-.52-.34z" />
+            <path
+                d="M26.67 5.33A13.24 13.24 0 0 0 16.03 1.5C8.95 1.5 3.2 7.25 3.2 14.33c0 2.24.58 4.43 1.69 6.37L3 30.5l9.99-1.82a12.78 12.78 0 0 0 6.04 1.55h.01c7.08 0 12.83-5.75 12.83-12.83 0-3.43-1.34-6.65-3.2-9.07zM19.03 28.2h-.01c-2.07 0-4.09-.56-5.86-1.62l-.42-.25-5.92 1.08 1.06-5.76-.27-.44a10.66 10.66 0 0 1-1.64-5.71c0-5.9 4.8-10.7 10.7-10.7 2.86 0 5.55 1.12 7.57 3.13a10.64 10.64 0 0 1 3.13 7.57c0 5.9-4.8 10.7-10.7 10.7z" />
+        </svg>
+
+        <!-- Tooltip -->
+        <span
+            class="pointer-events-none absolute right-16 md:right-20 bottom-1/2 translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+            Fale no WhatsApp
+        </span>
+    </a>
+
+
+    <!-- JS Menu Mobile (abre/fecha + fecha ao clicar em link) -->
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // fecha o menu ao clicar em um link
+        menu.querySelectorAll("a").forEach(a => {
+            a.addEventListener("click", () => menu.classList.add("hidden"));
+        });
+    </script>
+
+</body>
+
+</html>
